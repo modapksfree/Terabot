@@ -12,6 +12,14 @@ from status import format_progress_bar
 from video import download_video, upload_video
 from web import keep_alive
 
+#for token verification
+
+API = environ.get("API", "") # shortlink api
+URL = environ.get("URL", "") # shortlink domain without https://
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
+BOT_USERNAME = environ.get("BOT_USERNAME", "") # bot username without @
+VERIFY = environ.get("VERIFY", "True") # set True Or False and make sure spelling is correct and first letter capital.
+
 load_dotenv('config.env', override=True)
 
 logging.basicConfig(level=logging.INFO)
