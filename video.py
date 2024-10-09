@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 #for token verification
 from utils import check_verification, get_token
-from info import VERIFY, VERIFY_TUTORIAL, BOT_USERNAME
+from terabox import VERIFY, VERIFY_TUTORIAL, BOT_USERNAME
 
 
 aria2 = aria2p.API(
