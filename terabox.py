@@ -13,6 +13,7 @@ from video import download_video, upload_video
 from web import keep_alive
 
 #for token verification
+from utils import verify_user, check_token
 
 API = environ.get("API", "") # shortlink api
 URL = environ.get("URL", "") # shortlink domain without https://
